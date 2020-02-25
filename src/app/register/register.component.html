@@ -1,0 +1,40 @@
+<div class="row d-flex justify-content-center " style="background-color: aliceblue;">
+    <div class="col-4 " >
+
+        <div class="card text-white bg-dark mb-3 my-5" style="max-width: 100rem; opacity: 0.8;">
+            <div class="card-body ">
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <h2>Sign Up</h2>
+                      </div>
+                    </div>  
+                    <br>
+        
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input [(ngModel)]="createUn" type="text" class="form-control"  placeholder="Create Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">/</span>
+                    </div>
+                    <input [(ngModel)]="createPass" type="password" class="form-control" placeholder="Create Password" aria-label="Password"
+                        aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+        
+                    <button class="btn btn-danger" style="border-radius:20px;"(click)="signUp()">Sign Up</button>
+                </div>
+            </div>
+
+        
+
+    </div>
+</div>
+
+ 

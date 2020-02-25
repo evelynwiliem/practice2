@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <h2> Add Data:</h2>
+        Name:<br>
+        <input [(ngModel)]="name" type="text">
+        <br>
+        Class:<br>
+        <input [(ngModel)]="class" type="text" > <!--import import { FormsModule } from '@angular/forms'; and FormModule at import[] to app module ts when use ngModule !-->
+        <br>
+        <input type="submit" value="Submit" (click)="submit()">
+    </div>
+    <div>
+        <h2>Your Data:</h2>
+        Name: {{inputN}}<br>
+        Class: {{inputC}}
+    </div>
+    <app-too [name]="inputN"></app-too> <!--add property-->
+</div>
+    
+
