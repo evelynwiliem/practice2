@@ -9,7 +9,8 @@ import { TooComponent } from './too/too.component';
 import { FormsModule } from '@angular/forms'; //import this when use ngModule
 import { RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
-import { SignInComponent } from './sign-in/sign-in.component'; //import this for routing to work
+import { SignInComponent } from './sign-in/sign-in.component';
+import { HomeComponent } from './home/home.component'; //import this for routing to work
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SignInComponent } from './sign-in/sign-in.component'; //import this for
     HeadComponent,
     TooComponent,
     RegisterComponent,
-    SignInComponent
+    SignInComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,7 @@ import { SignInComponent } from './sign-in/sign-in.component'; //import this for
     FormsModule,//import this when use ngModule
     RouterModule.forRoot([
       { path: '', component:SignInComponent},
-      { path: 'too', component:TooComponent},
+      { path: 'home', component:HomeComponent},
 
     ])
   ],
