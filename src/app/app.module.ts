@@ -11,6 +11,9 @@ import { RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { HomeComponent } from './home/home.component'; //import this for routing to work
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { HomeComponent } from './home/home.component'; //import this for routing
     TooComponent,
     RegisterComponent,
     SignInComponent,
-    HomeComponent
+    HomeComponent,
+    
   ],
   imports: [
+    ModalModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     FormsModule,//import this when use ngModule
+    TooltipModule.forRoot(),
     RouterModule.forRoot([
       { path: '', component:SignInComponent},
       { path: 'home', component:HomeComponent},

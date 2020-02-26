@@ -14,8 +14,27 @@
 <div class="h-100 d-flex justify-content-center " style="max-height: 100%;background-color: aliceblue;padding-top:5%; padding-bottom: 30%;">
         <div class="col-lg- 11 col-md-11 col-11 " >
             <h2 style="text-align: center;">Table</h2>
+            
             <table class="table table-striped table-dark">
+                
                 <thead>
+                    <tr>
+                        <th> <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#addList">+</button> </th> 
+                        <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+ 
+                        <ng-template #template>
+                          <div class="modal-header">
+                            <h4 class="modal-title pull-left">Modal</h4>
+                            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            
+                          </div>
+                        </ng-template>  
+                    </tr>
+                      
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">First</th>
