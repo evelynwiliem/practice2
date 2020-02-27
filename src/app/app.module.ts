@@ -13,6 +13,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { HomeComponent } from './home/home.component'; //import this for routing to work
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ModalModule } from 'ngx-bootstrap';
     RegisterComponent,
     SignInComponent,
     HomeComponent,
+    AboutComponent,
     
   ],
   imports: [
