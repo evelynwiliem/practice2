@@ -15,6 +15,12 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap';
 import { AboutComponent } from './about/about.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+// import { AngularFireDatabaseModule} from '@angular/fire/database';
+
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +43,10 @@ import { AboutComponent } from './about/about.component';
       { path: '', component:SignInComponent},
       { path: 'home', component:HomeComponent},
 
-    ])
+    ]),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    // AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

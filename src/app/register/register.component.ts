@@ -16,4 +16,6 @@ export class RegisterComponent implements OnInit {
     console.log('berhasil create account');
     this.router.navigate(['/signIn']);
   }
+
+  
 }
